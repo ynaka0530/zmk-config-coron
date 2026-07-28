@@ -84,49 +84,31 @@
 
         FUNCTION {
             bindings = <
-&none  &kp F10  &kp F11  &kp F12  &none   &none   &trans  &kp PG_UP  &trans             &trans         &trans            &trans
-&none  &kp F7   &kp F8   &kp F9   &none   &none   &none   &trans     &kp C_AC_ZOOM_OUT  &kp PAGE_DOWN  &kp C_AC_ZOOM_IN  &trans  &trans  &trans
-&none  &kp F4   &kp F5   &kp F6   &none   &none   &none   &trans     &trans             &trans         &trans            &trans  &trans  &trans
-&none  &kp F1   &kp F2   &kp F3   &trans  &trans  &trans  &trans     &trans             &trans         &trans
+&none  &kp F10  &kp F11  &kp F12  &none  &none  &none  &kp PG_UP  &none              &trans         &trans            &trans
+&none  &kp F7   &kp F8   &kp F9   &none  &none  &none  &none      &kp C_AC_ZOOM_OUT  &kp PAGE_DOWN  &kp C_AC_ZOOM_IN  &trans  &trans  &trans
+&none  &kp F4   &kp F5   &kp F6   &none  &none  &none  &none      &none              &none          &trans            &trans  &trans  &trans
+&none  &kp F1   &kp F2   &kp F3   &none  &none  &none  &none      &none              &trans         &trans
             >;
         };
 
         NUM {
             bindings = <
-&kp KP_EQUAL   &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_PLUS      &kp KP_MINUS  &none   &kp UP  &none     &kp KP_NUMBER_0  &kp KP_PLUS  &trans
-&kp LPAR       &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_ASTERISK  &kp KP_SLASH  &none   &none   &kp LEFT  &kp DOWN_ARROW   &kp RIGHT    &kp KP_DOT    &kp KP_MINUS     &trans
-&kp RPAR       &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp CARET        &none         &none   &none   &none     &none            &none        &kp KP_COMMA  &kp KP_ASTERISK  &trans
-&kp BACKSLASH  &kp KP_NUMBER_0  &kp KP_DOT       &kp KP_COMMA     &trans           &trans        &trans  &trans  &trans    &kp KP_SLASH     &trans
+&kp KP_EQUAL   &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_PLUS      &kp KP_MINUS  &none  &kp UP  &none     &none           &none      &none
+&none          &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_ASTERISK  &kp KP_SLASH  &none  &none   &kp LEFT  &kp DOWN_ARROW  &kp RIGHT  &kp RIGHT_SHIFT  &none  &none
+&none          &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp CARET        &none         &none  &none   &none     &none           &none      &none            &none  &none
+&kp BACKSLASH  &kp KP_NUMBER_0  &kp KP_DOT       &kp KP_COMMA     &none            &none         &none  &none   &none     &none           &none
             >;
         };
 
         ARROW {
             bindings = <
-&trans  &trans  &trans          &kp UP_ARROW    &trans           &trans  &kp AMPERSAND  &kp ASTRK  &trans           &kp INT_YEN  &kp LPAR   &kp RPAR
-&trans  &trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans  &trans         &trans     &kp DOLLAR       &kp PERCENT  &kp CARET  &kp TILDE  &kp LBKT  &kp RBKT
-&trans  &trans  &trans          &trans          &trans           &trans  &trans         &trans     &kp EXCLAMATION  &kp AT_SIGN  &kp POUND  &trans     &kp LBRC  &kp RBRC
-&trans  &trans  &trans          &trans          &trans           &trans  &trans         &trans     &trans           &trans       &trans
+&none  &kp AMPS    &kp ASTERISK  &kp TILDE  &kp LPAR          &kp RPAR  &none  &kp UP_ARROW  &none           &none           &none            &none
+&none  &kp DOLLAR  &kp PRCNT     &kp CARET  &kp LEFT_BRACKET  &kp RBKT  &none  &none         &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp RSHFT  &none  &none
+&none  &kp EXCL    &kp AT        &kp HASH   &kp LT            &kp GT    &none  &none         &none           &none           &none            &none      &none  &none
+&none  &none       &none         &none      &none             &none     &none  &none         &none           &none           &none
             >;
 
             sensor-bindings = <&inc_dec_kp LC(PAGE_UP) LC(PAGE_DOWN)>;
-        };
-
-        MOUSE {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans    &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &mkp MB1  &mkp MB3  &mkp MB2  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans    &trans    &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans
-            >;
-        };
-
-        SCROLL {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-            >;
         };
 
         layer_6 {
