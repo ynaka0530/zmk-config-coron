@@ -95,19 +95,19 @@
 
         NUM {
             bindings = <
-&kp EQUAL      &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &none  &kp UP  &none     &none           &none      &none
-&none          &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &none  &none   &kp LEFT  &kp DOWN_ARROW  &kp RIGHT  &kp RIGHT_SHIFT  &none  &none
-&none          &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &none  &none   &none     &none           &none      &none            &none  &none
-&kp BACKSLASH  &kp KP_NUMBER_0  &kp KP_DOT       &kp KP_NUMBER_0  &none            &none            &none  &none   &none     &none           &none
+&kp PLUS   &kp LEFT_BRACKET      &kp RIGHT_BRACKET      &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &none          &kp UP  &none     &none           &none      &none
+&kp MINUS  &kp LESS_THAN         &kp GREATER_THAN       &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &none          &none   &kp LEFT  &kp DOWN_ARROW  &kp RIGHT  &kp RIGHT_SHIFT  &none  &none
+&kp ASTRK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp BACKSLASH  &none   &none     &none           &none      &none            &none  &none
+&kp SLASH  &kp KP_COMMA          &kp KP_DOT             &kp KP_NUMBER_0  &none            &none            &none          &none   &none     &none           &none
             >;
         };
 
         ARROW {
             bindings = <
-&none  &kp AMPS    &kp ASTERISK  &kp TILDE  &kp LPAR          &kp RPAR  &none  &kp UP_ARROW  &none           &none           &none            &none
-&none  &kp DOLLAR  &kp PRCNT     &kp CARET  &kp LEFT_BRACKET  &kp RBKT  &none  &none         &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp RSHFT  &none  &none
-&none  &kp EXCL    &kp AT        &kp HASH   &kp LT            &kp GT    &none  &none         &none           &none           &none            &none      &none  &none
-&none  &none       &none         &none      &none             &none     &none  &none         &none           &none           &none
+&none                 &none                  &none  &kp LS(N7)        &kp LS(N8)        &kp LS(NON_US_BACKSLASH)  &none  &kp UP_ARROW  &none           &none           &none            &none
+&kp LEFT_BRACE        &kp RIGHT_BRACE        &none  &kp LS(NUMBER_4)  &kp LS(N5)        &kp LS(NUMBER_6)          &none  &none         &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp RSHFT  &none  &none
+&kp LEFT_BRACKET      &kp RIGHT_BRACKET      &none  &kp LS(NUMBER_1)  &kp LS(NUMBER_2)  &kp LS(NUMBER_3)          &none  &none         &none           &none           &none            &none      &none  &none
+&kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &none  &none             &none             &none                     &none  &none         &none           &none           &none
             >;
 
             sensor-bindings = <&inc_dec_kp LC(PAGE_UP) LC(PAGE_DOWN)>;
